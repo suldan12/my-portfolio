@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap');
+
+
+
+*{ 
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+} 
+.wrapper {
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+}
+body{
+    background-color: #edf4fa;
+}
+/*media qury for screens smaller then 768 pixcels*/
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .left-col {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    .container .right-col {
+        flex: 1;
+    }
+
+    .right-col img {
+        max-width: 100%;
+    }
+}
+.menu {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 15px;
+}
+.menu img{
+    width:80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    color: #192e47;
+    justify-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+}
+nav ul li a:hover{
+    color: #e70280;
+    background-color: #e2cdd9;
+    border-radius: 10px;
+}
+.menu button {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #192e47;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.container .left-col{
+    display: block;
+    padding: 25px;
+}
+.left-col h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.left-col mark{
+    background-color: white;
+    color: #e70280;
+    font-weight: 700;
+}
+.left-col p{
+    font-size: 20px;
+    color: #797d81;
+    font-weight: 500;
+    margin-block: 35px;
+    line-height: 1.8;
+}
+.left-col button{
+    width: 190px;
+    padding: 15px 10px; 
+    font-size: 20px;
+    margin-left: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.left-col button:hover {
+    background: rgb(231,2,128);
+    background: linear-gradient(18deg, rgba(231,2,128,1) 38%, rgba(85,70,252,0.8323704481792717) 85%);
+    color: #fff;
+}
+.left-col button.active {
+
+    background: rgb(231,2,128);
+    background: linear-gradient(18deg, rgba(231,2,128,1) 38%, rgba(85,70,252,0.8323704481792717) 85%);
+    color: #fff;
+}
+.right-col img{
+    width:500px;
+    border-radius: 50%;
+}
+
+.fa-br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 100%;
+    background-color: #dbdbdb;
+    padding: 14px;
+    margin-left: 50px;
+    border-radius: 10%;
+}
+.fa-br i {
+    background-color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    gap: 10px;
+}
+
+.colm1 img{
+    width:500px;
+    border-radius: 50%;
+
+}
+.colm2 .text1{
+
+   justify-items: end;
+}
