@@ -1,6 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700;700&display=swap');
 
+:root {
+    --btn-clr :  #e70280;
+    --white-clr : #ffff;
+    --black-clr: #000;
+    --gray-clr: #808080;
 
+    --font-bold: 700;
+    --font-regular: 500;
+    --font-light: 400;
+
+}
 
 *{ 
     font-family: 'Poppins', sans-serif;
@@ -101,8 +111,7 @@ nav ul li a:hover{
     margin-bottom: 20px;
     line-height: 1;
 }
-.left-col mark{
-    background-color: white;
+.left-col span{
     color: #e70280;
     font-weight: 700;
 }
@@ -127,7 +136,6 @@ nav ul li a:hover{
     color: #fff;
 }
 .left-col button.active {
-
     background: rgb(231,2,128);
     background: linear-gradient(18deg, rgba(231,2,128,1) 38%, rgba(85,70,252,0.8323704481792717) 85%);
     color: #fff;
@@ -157,12 +165,87 @@ nav ul li a:hover{
     gap: 10px;
 }
 
-.colm1 img{
-    width:500px;
+/* About section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+.about-section .about-img {
+    flex: 1;
+}
+.about-section .about-img img {
+    width: 500px;
     border-radius: 50%;
+    margin-right: 10px;
+}
+.about-section .about-text-upper {
+    display: block;
+    flex: 1.2;
+}
+.about-section .about-text-upper h1 {
+    font-size: 40px;
+    line-height: 1;
+    padding-bottom: 5px;
+    font-weight: var(--font-bold);
+}
+.about-section .about-text-upper span {
+    color: var(--btn-clr);
+}
+.about-section .about-text-upper p {
+    text-align: justify;
+    font-weight: var(--font-light);
+    color: var(--gray-clr);
+    padding-block: 10px;
+    line-height: 1;
+}
+.about-section .about-btns {
+    display: flex;
+    gap: 20px;
+    padding-block: 5px;
+}
+.about-section .about-btns button {
+    padding: 15px  25px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black-clr);
+    background-color:  var(--white-clr);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.about-section .about-btns button.active {
+    background: rgb(231,2,128);
+    background: linear-gradient(18deg, rgba(231,2,128,1) 38%, rgba(85,70,252,0.8323704481792717) 85%);
+    color: #fff;
+}
+.about-section .about-text-lower {
+    display: block;
+    margin-block: 20px;
+    line-height: 0;
 
 }
-.colm2 .text1{
+.about-text-upper .text-card {
+    display: block;
+}
+.about-text-lower  .text-card .text-options {
+    display: flex;
+    gap: 20px;
+    line-height: 0;
+    padding-block: 10px;
+}
+.about-text-lower  .text-card .text-options p {
+    font-size: 16px;
+    text-transform: uppercase;
 
-   justify-items: end;
+}
+.about-section .download-Btn {
+    padding: 15px  25px;
+    font-size: 18px;
+    font-weight: var(--font-bold);
+    color: var(--black-clr);
+    background-color:  var(--white-clr);
+    border: 1px solid var(--black-clr);
+    border-radius: 4px;
+    cursor: pointer;
 }
