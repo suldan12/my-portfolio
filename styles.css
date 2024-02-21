@@ -21,7 +21,6 @@
 .wrapper {
     max-width: 1500px;
     margin: auto;
-    position: relative;
 }
 body{
     background-color: #edf4fa;
@@ -101,6 +100,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    position: relative;
 }
 .container .left-col{
     display: block;
@@ -176,7 +176,7 @@ nav ul li a:hover{
 }
 .about-section .about-img img {
     width: 500px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin-right: 10px;
 }
 .about-section .about-text-upper {
@@ -205,7 +205,7 @@ nav ul li a:hover{
     padding-block: 5px;
 }
 .about-section .about-btns button {
-    padding: 15px  25px;
+    padding: 10px  25px;
     font-size: 24px;
     font-weight: 500;
     color: var(--black-clr);
@@ -248,4 +248,152 @@ nav ul li a:hover{
     border: 1px solid var(--black-clr);
     border-radius: 4px;
     cursor: pointer;
+}
+
+/*Service Section*/
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8%;
+}
+.service h4{
+    color: #e70280;
+    font-size: 18px;
+    line-height: 2;
+}
+.service h1 {
+    font-size: 40px;
+}
+.service h1 span{
+    color: #e70280;
+}
+.service-boxes {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px;
+    margin-block: 20px;
+}
+.box {
+    background-color: #edf4fa;
+    margin-left: 10px;
+    padding: 50px 20px;
+    text-align: justify;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 300px;
+
+}
+.box i {
+    color: #9caec0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    font-size: 30px;
+}
+.box h2 {
+    padding-block: 10px;
+    font-weight: 700;
+}
+.box p {
+    color: var(--gray-clr);
+    line-height: 1;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.box button {
+    margin-block: 10px;
+    font-size: 18px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 10px;
+}
+.box button a {
+    text-decoration: none;
+    color: var(--black-clr);
+    font-weight: 700;
+}
+.box button a i {
+    margin-inline: 10px;
+}
+
+/* portfolio section */
+.portfolio {
+    margin-block: 4%;
+    padding: 10px;
+}
+.portfolio h4 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--btn-clr);
+    margin-bottom: 10px;
+}
+.portfolio h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.portfolio .portofolio-btns {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: #e3edf7;
+    margin: 10px auto 0;
+    padding: 5px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.portfolio .portofolio-btns button {
+    border: none;
+    padding: 10px;
+    background-color: #e3edf7;
+    color: #000;
+    font-size: 20px;
+    font-weight: var(--font-bold);
+
+  
+}
+.portfolio .portofolio-btns .active {
+    background-color: #edf4fa;
+    width: 35%;
+    margin: 1 1px;
+    padding-bottom: 0 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+} 
+
+.Portfolio-cards {
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    margin-block: 20px;
+    text-align: left;
+}
+
+/* .Portfolio-cards .hooyo{
+
+    display: block;
+
+} */
+
+.Portfolio-cards .cards{
+    display: flex;
+    background-color: #1abe43;
+    margin-bottom: 15px;
+    padding: 15px;
+    /* height: 50%; */
+    width: 60%;
+    margin-right: 1000%;
+  
+}
+.Portfolio-cards .cards .card-right-col h1{
+
+    text-align: left;
+    font-size: 20px;
+    padding-block: 20px;
+
+
 }
