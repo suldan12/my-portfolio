@@ -15,7 +15,7 @@
     <section class="wrapper">
         <nav>
             <div class="menu">
-                <img src="./images/WHITE.jpg" alt="">
+                <img src="./images/WHITE.jpg">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -27,16 +27,19 @@
                 <button>let's Chat <i class="fa-solid fa-comment" style="color: #fff;"></i></button>
             </div>    
             </nav>
+            <!-- Home section -->
         <section class="container" id="home">
-            <div class="left-col">
-                <h2>Hi I'm suldan <span>Adam</span><br><b style="font-size: 30px;">Web developer</b></h2>
+            <div class="left-col fade-in">
+                <h2 class="fade-in">Hi I'm suldan <span>Adam</span><br><b style="font-size: 30px;">Web developer</b></h2>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sed autem sint repellat quisquam, quas, voluptate illo similique nesciunt ut beatae nobis facilis. Ad, quas repellat ducimus aspernatur asperiores odio!</p>
                 <button class="active">Hire Me</button>
                 <button>Download Cv</button>
             </div>
-            <div class="right-col">
-                <img src="./images/WHITE.jpg" alt="">
+            <div class="right-col fade-in">
+                <div class="content">
+                    <img src="./images/WHITE.jpg">
+                </div>
                 <div class="fa-br">
                     <a href="https://www.w3schools.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"></a><i class="fa-brands fa-twitter" style="color: #551a8b;"></i></a>
@@ -50,13 +53,15 @@
         <div class="about-section" id="about">
             <div class="about">
                 <div class="about-img">
-                    <img src="./images/fronted.png">
+                    <img src="./images/fronted.png" class="fade-in">
                 </div>
                 <div class="about-text-upper">
-                    <h2>About Suldan</h2>
-                    <h1>3 Year's Exprience On <br><span>Web development</span></h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit reprehenderit incidunt suscipit vel eius, ipsum velit distinctio soluta hic iste alias tempore expedita odit, placeat voluptas maiores fugiat excepturi itaque.</p>
-                    <button class="read-Btn">Read More</button>
+                    <div class="fade-in">
+                        <h2>About Suldan</h2>
+                        <h1>3 Year's Exprience On <br><span>Web development</span></h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit reprehenderit incidunt suscipit vel eius, ipsum velit distinctio soluta hic iste alias tempore expedita odit, placeat voluptas maiores fugiat excepturi itaque.</p>
+                        <button class="read-Btn">Read More</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,29 +69,29 @@
         <!--Servece section-->
         <div class="service" id="skills">
             <div class="service-text-upper">
-                <h4>What We Do</h4>
-                <h1>We are Optimists Who love to <br>work <span>Together</span></h1>
+                <h4 class="fade-in">What We Do</h4>
+                <h1 class="fade-in">We are Optimists Who love to <br>work <span>Together</span></h1>
             </div>
             <div class="service-boxes">
-                <div class="box box-1">
+                <div class="box fade-in">
                     <i class="fa-solid fa-computer"></i>
                     <h2>Web development</h2>
                     <p>I throw my self down among the tall grass by the stream as i lie close to the earth</p>
-                    <button><a href="#">Read More <i class="fa-solid fa-plus"></i> </a></button>
+                    <button>Read More <i class="fa-solid fa-plus"></i></button>
               
                 </div>
-                <div class="box box-3">
+                <div class="box fade-in">
                     <i class="fa-solid fa-computer"></i>
                         <h2>Graphic Desing</h2>
                         <p>I throw my self down among the tall grass by the stream as i lie close to the earth</p>
-                        <button><a href="#">Read More <i class="fa-solid fa-plus"></i> </a></button>
+                        <button>Read More <i class="fa-solid fa-plus"></i></button>
                   
                 </div>
-                <div class="box box-4">
+                <div class="box fade-in">
                     <i class="fa-solid fa-computer"></i>
                         <h2>Digital Marketing</h2>
                         <p>I throw my self down among the tall grass by the stream as i lie close to the earth</p>
-                        <button><a href="#">Read More <i class="fa-solid fa-plus"></i> </a></button>
+                        <button>Read More <i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
@@ -94,10 +99,12 @@
 
         <!--Portfolio Section-->
         <section class="portfolio"  id="projects">
-            <h4>Projects</h4>
-            <h1>My Creative Works</h1>
+            <div class="fade-in">
+                <h4>Projects</h4>
+                <h1>My Creative Works</h1>
+            </div>
             <div class="Portfolio-cards">
-                <div class="cards card-1">
+                <div class="cards card-1 fade-in">
                     <img src="images/weather.png">
                     <div class="card-text">
                         <h2>Weather App</h2>
@@ -108,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="cards card-2">
+                <div class="cards card-2 fade-in">
                     <img src="images/restaurent.png">
                     <div class="card-text">
                         <h2>restaurent App</h2>
@@ -118,7 +125,7 @@
                         <button>click here</button>
                     </div>
                 </div>
-                <div class="cards card-3">
+                <div class="cards card-3 fade-in">
                     <img src="images/calculator.png">
                     <div class="card-text">
                         <h2>calculator App</h2>
@@ -132,12 +139,13 @@
         </section> 
 
         <!-- Contact section -->
-
     <section class="contact-section" id="contact">
         <div class="contact">
-            <h3>Contact Me</h3>
-            <h1>Get in Touch With Me</h1>
-            <form action="">
+            <div class="fade-in">
+                <h3>Contact Me</h3>
+                <h1>Get in Touch With Me</h1>
+            </div>
+            <form action="" class="fade-in">
                 <div class="user-details">
                     <input type="text" id="first-name" placeholder="First Name">
                     <input type="text" id="last-name" placeholder="Last Name">
@@ -150,6 +158,10 @@
         </div>
     </section>
 
-</section> 
+    <!-- footer section -->
+    <section class="footer"></section>
+
+</section>
+<script src="app.js"></script> 
 </body>
 </html>
