@@ -578,6 +578,7 @@ textarea {
     transition: all 1s;
 }
 
+
 /* about-page */
 
 .back-main {
@@ -651,3 +652,66 @@ textarea {
 .skill-left-col img {
     width: 500px;
 }
+=======
+.footer{
+    background-color: #121b25;
+    width: 100%;
+    padding-left: 13%;
+    padding-top: 50px;
+   display: grid;
+   grid-template-columns:repeat(auto-fit,minmax(200px,auto)) ;
+}
+
+.footer img{
+    width:80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer-content h4{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-content li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.footer-content li a{
+  text-decoration: none;
+  display: block;
+  color: #d6d6d6;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all  .40s ease;
+}
+.footer-content li a:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+}
+.footer p{
+    color: #d6d6d6;
+    margin-bottom: 10px;
+
+}
+.icons a{
+    display: inline-block;
+    color: #d6d6d6;
+    margin-right: 16px;
+    transition: all .40s ease;
+
+}
+.icons a:hover{
+    color: #fff;
+    transform:  translateY(-5px);
+
+}
+
+@media (max-width:1120px){
+    .footer{
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,auto)) ;
+        width: 100%;
+        
+    }
+}
+
+
