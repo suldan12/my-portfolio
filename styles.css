@@ -69,9 +69,12 @@ nav ul li a:hover{
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
-    color: #fff;
     background-color: #192e47;
     cursor: pointer;
+}
+button a {
+    color: #fff;
+    text-decoration: none;
 }
 .container{
     display: flex;
@@ -169,7 +172,6 @@ nav ul li a:hover{
     content: '';
     position: absolute;
     inset: 20px;
-    /* background: #edf4fa; */
     border-radius: 50%;
     z-index: 1;
 }
@@ -223,7 +225,7 @@ nav ul li a:hover{
 }
 /* About section */
 .about-section {
-    margin-top: 8%;
+    margin-top: 4%;
     background-color: var(--white-clr);
 }
 .about {
@@ -576,6 +578,81 @@ textarea {
     transition: all 1s;
 }
 
+
+/* about-page */
+
+.back-main {
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    margin-inline: var(--margin-padding);
+    margin-block:  2%;
+    border-radius: 30px;
+    background: linear-gradient(18deg, rgba(231,2,128,1) 38%, rgba(85,70,252,0.8323704481792717) 85%);
+    cursor: pointer;
+}
+.about.about-page {
+    margin-top: -5%;
+    padding-bottom: 5%;
+}
+
+/* Skill Section */
+.skill-section {
+    background-color: var(--white-clr);
+    padding-block: 20px;
+}
+.skill-section h1 {
+    text-align: center;
+    font-weight: var(--font-bold);
+    font-size: 30px;
+    margin-top: 5%;
+}
+.skill-section .skill-details {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* margin-top: 2%; */
+    margin-inline: var(--margin-padding);
+}
+.skill-details .skill-Right-col {
+    display: block;
+    flex: 1;
+}
+.skill-details .skill-Right-col h2 {
+    text-align: center;
+    font-size: 1rem;
+    padding-block: 20px;
+}
+.skill-Right-col .progress {
+    display: block;
+    width: 100%;
+}
+.skill-Right-col .progress .bar {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 2px;
+    margin-block-end: 10px;
+}
+.skill-Right-col h3 {
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+}
+.skill-Right-col .bar span {
+    display: block;
+    width: 40%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e70280;
+}
+.skill-details .skill-left-col {
+    display: block;
+    flex: 1;
+}
+.skill-left-col img {
+    width: 500px;
+}
+=======
 .footer{
     background-color: #121b25;
     width: 100%;
@@ -636,4 +713,5 @@ textarea {
         
     }
 }
+
 
