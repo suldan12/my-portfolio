@@ -652,14 +652,14 @@ textarea {
 .skill-left-col img {
     width: 500px;
 }
-=======
+/*  */
 .footer{
     background-color: #121b25;
     width: 100%;
     padding-left: 13%;
     padding-top: 50px;
-   display: grid;
-   grid-template-columns:repeat(auto-fit,minmax(200px,auto)) ;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,auto)) ;
 }
 
 .footer img{
@@ -676,12 +676,12 @@ textarea {
     list-style: none;
 }
 .footer-content li a{
-  text-decoration: none;
-  display: block;
-  color: #d6d6d6;
-  font-size: 15px;
-  font-weight: 400;
-  transition: all  .40s ease;
+    text-decoration: none;
+    display: block;
+    color: #d6d6d6;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all  .40s ease;
 }
 .footer-content li a:hover{
     transform: translateY(-3px) translateX(-5px);
