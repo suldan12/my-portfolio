@@ -12,3 +12,11 @@ const observer = new IntersectionObserver((entries) => {
 
 const faders = document.querySelectorAll('.fade-in');
 faders.forEach((fader) => observer.observe(fader));
+
+function goToMessenger() {
+    
+}
+
+function goAboutPage() {
+    window.location.href = 'about.html';
+}
