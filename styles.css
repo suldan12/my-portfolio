@@ -54,7 +54,6 @@ nav ul li{
     margin: 0 15px;
 }
 nav ul li a{
-    
     justify-items: center;
     margin: 0 auto;
     text-decoration: none;
@@ -62,7 +61,6 @@ nav ul li a{
     font-weight: 700;
     font-size: 1.2rem;
     padding: 10px;
-    
 }
 nav ul li a:hover{
     color: #e70280;
@@ -81,7 +79,12 @@ button a {
     color: #fff;
     text-decoration: none;
 }
-.container{
+
+.menu .hamburger {
+    display: none;
+    font-size: 20px;
+}
+.containered{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +92,7 @@ button a {
     position: relative;
     margin-inline: var(--margin-padding);
 }
-.container .left-col{
+.containered .left-col{
     display: block;
     padding: 25px;
     flex: 1;
@@ -119,6 +122,7 @@ button a {
     width: 190px;
     padding: 10px 10px; 
     margin-left: 15px;
+    margin-bottom: 15px;
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -217,13 +221,13 @@ button a {
     gap: 10px;
 }
 
-.container .fade-in {
+.containered .fade-in {
     opacity: 0;
     transition: all 1s;
     filter: blur(0);
     transform: translateY(-100%);
 }
-.container .show {
+.containered .show {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
@@ -658,7 +662,7 @@ textarea {
 .skill-left-col img {
     width: 500px;
 }
-/*  */
+/* footer section */
 .footer{
     background-color: #121b25;
     width: 100%;
@@ -720,5 +724,242 @@ textarea {
     }
 }
 
+@media only screen and (max-width:640px){
+    .nav{
+        display: none;
+    }
+    .nav.active{
+        display: block;
+        position: absolute;
+        top: 20%;
+        margin-inline: 2%;
+        padding: 10px;
+        background-color: #d6e1ea;
+        width: 90%;
+        height: 280px;
+        z-index: 10000;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu button {
+        display: none;
+    }
+    .menu .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+    }
+    /*  */
+    .containered{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .containered .fade-in {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(-100%);
+    }
+    .containered .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+        transition: all 1s;
+    }
+    .right-col {
+        width: 400px;
+        height: 350px;
+    }
+    .left-col h2{
+        font-size: 30px;
+        line-height: 1;
+    }
+    .about-section {
+        margin-top: 13%;
+        background-color: var(--white-clr);
+    }
+    .about {
+        display: block;
+    }
+    .about-section .about-img img {
+        width: 400px;
+        margin-right: 10px;
+    }
+    .about-section .read-Btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-img .fade-in {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(100%);
+    }
+    .about-text-upper .fade-in {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(100%);
+    }
+    .about-section .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+        transition: all 1s;
+    }
+    /* servicex */
+    .service h4{
+        font-size: 12px;
+    }
+    .service h1 {
+        font-size: 20px;
+    }
+    .service-boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box h2 {
+        font-size: 20px;
+    }
+    .box p {
+        text-align: center;
+    }
+    .service-text-upper .fade-in  {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(100%);
+    }
+    .service-boxes .fade-in {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(100%);
+    }
+    .service .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+        transition: all 1s;
+    }
+    /* portfolio section */
+    .portfolio {
+        margin-block: 10% 4%;
+        margin-inline: var(--margin-padding);
+    }
+    .portfolio h4 {
+        text-align: center;
+        font-size: 20px;
+        color: var(--btn-clr);
+        margin-block: 10px;
+    }
+    .portfolio h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .Portfolio-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Portfolio-cards .cards {
+        display: block;
+        padding: 0px;
+        width: 100%;
+    }
+    .cards button {
+        margin-block: 8px 13px;
+        font-size: 1.3rem;
+        padding: 7px 18px;
+    }
+    .cards:hover {
+        animation-name: shake;
+        animation-duration: 2s;
+    }
+    .portfolio .fade-in {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(100%);
+    }
+    .Portfolio-cards .fade-in{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(100%);
+    }
+    .portfolio .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+        transition: all 1s;
+    }
+
+    /* contact-section */
+    .contact {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .contact h3 {
+        color: var(--btn-clr);
+        margin-top: 20px;
+    }
+    .contact h1 {
+        font-size: 2rem;
+    }
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form .user-details {
+        display: flex;
+        gap: 10px;
+        margin-block: 20px
+    }
+    input {
+        width: 100%;
+        padding: 15px 25px;
+        margin-top: 10px;
+        outline: none;
+        font-size: 0.8rem;
+        border-radius: 12px;
+    }
+    textarea {
+        width: 100%;
+        resize: none;
+        font-size: 1rem;
+    }
+    .contact .fade-in {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateY(100%);
+    }
+    .contact .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+        transition: all 1s;
+    }
+    .skill-section .skill-details {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .skill-left-col img {
+        width: 400px;
+    }
+}
 
 
