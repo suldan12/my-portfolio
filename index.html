@@ -21,7 +21,7 @@
             <div class="menu">
                 <img src="./images/WHITE.jpg">
 
-                    <ul>
+                    <ul class="nav">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
@@ -30,17 +30,18 @@
                         
                     </ul>
                 <button><a href="https://www.facebook.com/messages/t/100015003159632">let's Chat <i class="fa-solid fa-comment" style="color: #fff;"></i></a></button>
+                <i class="fa fa-bars hamburger"></i>
             </div>    
         </nav>
         <!-- Home section -->
-        <section class="container" id="home">
+        <section class="containered " id="home">
             <div class="left-col fade-in">
-                <h2 class="fade-in">Hi I'm suldan <span>Adam</span><br><b style="font-size: 30px;">Web developer</b>
+                <h2 class="fade-in font-bold">Hi I'm suldan <span>Adam</span><br><b style="font-size: 30px;">Web developer</b>
                 </h2>
 
                 <p>A Web designer and frontend Developer!</p>
 
-                <button class="active">Hire Me</button>
+                <button class="active"><a href="#contact">Hire Me</a></button>
                 <button>Download Cv</button>
             </div>
             <div class="right-col fade-in">
@@ -157,9 +158,9 @@
                     </div>
                     <input type="email" id="email" placeholder="Email">
                     <input type="text" id="subject" placeholder="Subject">
-                    <textarea name="subject" id="textarea" cols="30" rows="10"></textarea>
+                    <textarea name="subject" id="textarea" cols="30" rows="10" placeholder="type your message here"></textarea>
                 </form>
-                <button>Submit</button>
+                <button id="submit-btn">Submit</button>
             </div>
         </section>
 
