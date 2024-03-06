@@ -75,4 +75,3 @@ function addToLocal(firstName, lastName, email, subject, message) {
     existingData.push(newData);
     localStorage.setItem('formData', JSON.stringify(existingData));
 }
-
