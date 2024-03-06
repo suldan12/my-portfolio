@@ -129,7 +129,9 @@ button a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
 }
-
+.left-col button a {
+    color: #000;
+}
 .left-col button:hover {
     background: rgb(231,2,128);
     background: linear-gradient(18deg, rgba(231,2,128,1) 38%, rgba(85,70,252,0.8323704481792717) 85%);
@@ -770,6 +772,7 @@ textarea {
     .right-col {
         width: 400px;
         height: 350px;
+        margin-bottom: 20px;
     }
     .left-col h2{
         font-size: 30px;
@@ -783,7 +786,7 @@ textarea {
         display: block;
     }
     .about-section .about-img img {
-        width: 400px;
+        width: 100%;
         margin-right: 10px;
     }
     .about-section .read-Btn {
