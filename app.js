@@ -17,15 +17,27 @@ faders.forEach((fader) => observer.observe(fader));
 
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
+const close = document.querySelector('.fa-xmark')
 let isActive = false;
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click' , () =>{
     if (!isActive) {
         nav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      close.classList.add('active')
     }
     else {
         nav.classList.remove('active');
     }
-})
+    close.addEventListener('click', () =>{
+
+        nav.classList.remove('active');
+        hamburger.classList.add('active');
+      close.classList.remove('active')
+
+    })
+})  
+
+
 
 function goAboutPage() {
     window.location.href = 'about.html';
