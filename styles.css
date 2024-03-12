@@ -29,11 +29,9 @@ body{
 }
 .menu {
     display: flex;
-    /* margin-top: 20px; */
     justify-content: space-between;
     align-items: center;
     padding-inline: 15px;
-    /* margin-inline: var(--margin-padding); */
     background-color: #d6e1ea;
 }
 .menu img{
