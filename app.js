@@ -75,15 +75,16 @@ function clearInputs() {
     textareaInput.value = '';
 }
 
-function addToLocal(firstName, lastName, email, subject, message) {
-    let existingData = JSON.parse(localStorage.getItem('formData')) || [];
-    const newData = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        subject: subject,
-        message: message
-    };
-    existingData.push(newData);
-    localStorage.setItem('formData', JSON.stringify(existingData));
+function sendEmail() {
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "Aliahmed9973312@gmail.com",
+        Password : "Asdfgh@99977",
+        To : 'Aliahmed9973312@gmail.com',
+        From : emailInput.value,
+        Subject : subjectInput.value,
+        Body : textareaInput.value
+    }).then(
+        message => alert(message)
+    );
 }
