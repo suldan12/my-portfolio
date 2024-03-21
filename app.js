@@ -1,3 +1,9 @@
+const faders = document.querySelectorAll('.fade-in');
+const hamburger = document.querySelector('.hamburger');
+const ul = document.querySelector('.nav');
+const close = document.querySelector('.fa-xmark');
+const heroSection = document.querySelector('.containered');
+const nav = document.querySelector('.menu');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -10,32 +16,36 @@ const observer = new IntersectionObserver((entries) => {
     })
 });
 
-const faders = document.querySelectorAll('.fade-in');
 faders.forEach((fader) => observer.observe(fader));
 
-// nav
 
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav');
-const close = document.querySelector('.fa-xmark')
 let isActive = false;
 hamburger.addEventListener('click' , () =>{
     if (!isActive) {
-        nav.classList.toggle('active');
+        ul.classList.toggle('active');
         hamburger.classList.toggle('active');
       close.classList.add('active')
     }
     else {
-        nav.classList.remove('active');
+        ul.classList.remove('active');
     }
     close.addEventListener('click', () =>{
 
-        nav.classList.remove('active');
+        ul.classList.remove('active');
         hamburger.classList.add('active');
       close.classList.remove('active')
 
     })
-})  
+}) 
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        nav.classList.add('scrolled');
+    }
+    else {
+        nav.classList.remove('scrolled');
+    }
+})
 
 
 

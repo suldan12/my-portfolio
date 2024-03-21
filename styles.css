@@ -33,10 +33,19 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-inline: 15px;
-    background-color: #d6e1ea;
-    Position : fixed ;
+    background-color: transparent;
+    transition: background-color .5s ease;
+    Position : sticky;
     Z-index : 1000;
-    Top:0;left:0;right:0;
+    Top:0;
+    left:0;
+    right:0;
+}
+.menu.scrolled {
+    position: fixed;
+    background-color: #d6e1ea;
+    transition: background-color .5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .menu img{
     width:80px;
