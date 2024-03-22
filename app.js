@@ -61,7 +61,8 @@ let subjectInput = document.getElementById('subject');
 let textareaInput = document.getElementById('textarea');
 let submitBtn = document.getElementById('submit-btn');
 
-submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     const firstName = firstNameInput.value.trim();
     const lastName = lastNameInput.value.trim();
     const email = emailInput.value.trim();
@@ -91,9 +92,9 @@ function sendEmail() {
         Username : "Aliahmed9973312@gmail.com",
         Password : "Asdfgh@99977",
         To : 'Aliahmed9973312@gmail.com',
-        From : emailInput.value,
-        Subject : subjectInput.value,
-        Body : textareaInput.value
+        From : email,
+        Subject : subject,
+        Body : "Name: " +  firstNameInput.value + " " + lastNameInput.value + "\nEmail: " + emailInput.value + "\n\n" + textareaInput.value
     }).then(
         message => alert(message)
     );
